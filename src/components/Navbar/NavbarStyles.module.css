@@ -66,6 +66,7 @@ nav {
     display: none;
     flex-direction: column;
     background-color: #333;
+    color: #f1e8dc;
     position: absolute;
     top: 70px;
     right: 0;
@@ -81,8 +82,8 @@ nav {
   }
 
   .cancelButton {
-    background-color: #ff6347;
-    color: white;
+    background-color: #f1e8dc;
+    /* color: white; */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -135,7 +136,7 @@ nav {
       z-index: 1111;
       a {
         text-decoration: none;
-        color: #000000b2;
+        color: #f1e8dc;
         display: block;
         text-align: center;
         margin-block: 10px;
@@ -187,7 +188,7 @@ nav {
       margin-inline: auto;
       a {
         text-decoration: none;
-        color: #000000b2;
+        color: #f1e8dc;
         display: block;
         text-align: center;
         margin-block: 10px;

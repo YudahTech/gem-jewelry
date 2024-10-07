@@ -80,8 +80,8 @@ const Shipping = () => {
       formErrors.phoneNumber = "Valid phone number is required.";
     if (!formFields.address) formErrors.address = "Address is required.";
     if (!formFields.cityState) formErrors.cityState = "City/State is required.";
-    if (!formFields.zipCode && !validateZipCode(formFields.zipCode))
-      formErrors.zipCode = "Valid zip code is required.";
+    // if (!formFields.zipCode && !validateZipCode(formFields.zipCode))
+    //   formErrors.zipCode = "Valid zip code is required.";
 
     return formErrors;
   };
@@ -125,7 +125,7 @@ const Shipping = () => {
       <hr />
 
       <div className={styles.container}>
-        <div className={styles.form}>
+        <form onSubmit={handleSubmit}>
           <h4>Shipping Details</h4>
           <input
             type="text"
@@ -201,15 +201,13 @@ const Shipping = () => {
             value={formFields.zipCode}
             onChange={handleChange}
           />
-          {errors.zipCode && (
-            <span className={styles.error}>{errors.zipCode}</span>
-          )}
+          <span className={styles.error}></span>
 
           <p>Shipping Estimate: 3-5 working days</p>
-          <Link to="/payment">
-            <button onClick={handleSubmit}>proceed to payment</button>
-          </Link>
-        </div>
+          {/* <Link to="/payment"> */}
+          <button>proceed to payment</button>
+          {/* </Link> */}
+        </form>
         <div className={styles.orderSummary}>
           <div className={styles.order}>
             {/* <div className={styles.image}> */}
@@ -240,16 +238,16 @@ const Shipping = () => {
               </div>
               <div className={styles.amount}>
                 <span>Subtotal</span>
-                <span>₦{`₦${formatPrice(totalAmount)}`}</span>
+                <span>{`₦${formatPrice(totalAmount)}`}</span>
               </div>
               <hr />
               <div className={styles.amount}>
                 <span>Delivery</span>
-                <span>₦{`₦${formatPrice(delivery)}`}</span>
+                <span>{`₦${formatPrice(delivery)}`}</span>
               </div>
               <div className={styles.amount}>
                 <span>Estimated Total</span>
-                <span>₦{`₦${formatPrice(totalAmount + delivery)}`}</span>
+                <span>{`₦${formatPrice(totalAmount + delivery)}`}</span>
               </div>
             </div>
           </div>

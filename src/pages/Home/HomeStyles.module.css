@@ -459,6 +459,71 @@
 }
 
 @media (max-width: 480px) {
+  .reviewsContainer {
+    height: 40vh;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    margin-bottom: 4.5rem;
+    .heading {
+      align-items: center;
+      width: 80%;
+
+      h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 0;
+        text-align: center;
+      }
+
+      h5 {
+        font-size: 0.6rem;
+        font-weight: 400;
+        line-height: 10px;
+        text-align: center;
+        /* width: 20rem; */
+      }
+    }
+
+    .reviews {
+      p {
+        margin: 0;
+      }
+      .topReview {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 80vw;
+        gap: 12px;
+        margin-bottom: 0;
+        q {
+          font-size: 0.5rem;
+          line-height: 0;
+        }
+      }
+      .bottomReview {
+        display: none;
+
+        a {
+          display: inline-block;
+          color: red;
+        }
+      }
+      .review {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        color: #000000b2;
+        width: 553px;
+        height: 132px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
   .imageWrapper {
     .imageContent {
       position: relative;

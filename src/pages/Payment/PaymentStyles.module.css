@@ -24,6 +24,7 @@
     grid-auto-flow: column;
     gap: 150px;
     width: 100%;
+    margin-block: 1rem;
   }
   .container {
     display: grid;
@@ -70,6 +71,7 @@
       .contact {
         display: flex;
         gap: 20px;
+        width: 100%;
         .inputWrapper {
           width: 100%;
           input {
@@ -229,7 +231,7 @@
 
     h4 {
       font-size: 1rem;
-      line-height: 1rem;
+      line-height: 3rem;
 
       img {
         position: relative;
@@ -312,7 +314,7 @@
         }
 
         button {
-          width: 340px;
+          width: 100%;
           height: 40px;
           border-radius: 0.3rem;
           background: #000000;
@@ -336,7 +338,7 @@
           align-items: center;
 
           span {
-            font-size: 0.75rem;
+            font-size: 0.65rem;
           }
 
           input {
@@ -348,11 +350,12 @@
 
           .imageWrap {
             position: absolute;
-            left: -10px;
+            left: 650px;
+            width: 60rem;
             img {
               width: auto;
               height: auto;
-              margin-right: 10px;
+              margin-right: 0;
             }
           }
         }
@@ -398,9 +401,9 @@
 
             img {
               position: absolute;
-              right: 250px;
+              right: 640px;
               width: 0;
-              margin-top: 30px;
+              margin-top: 10px;
               width: 100px;
               /* height: 198px; */
             }
@@ -479,6 +482,209 @@
         font-size: 1rem;
         font-weight: 700;
         line-height: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .payment {
+    max-width: 100%;
+    padding-left: 0;
+
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      /* grid-auto-flow: column; */
+      gap: 0;
+      width: 100%;
+      background-color: #ffff;
+
+      form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h4 {
+          font-size: 1.24rem;
+          font-weight: 500;
+          line-height: 48px;
+          margin-bottom: 0;
+          align-self: flex-start;
+        }
+
+        h5 {
+          font-size: 0.75rem;
+          font-weight: 400;
+          line-height: 24px;
+          margin-top: 0;
+          align-self: flex-start;
+        }
+        input:not([type="radio"]) {
+          width: 100%;
+          height: 51px;
+          padding: 1rem;
+          border-radius: 5px;
+          background: #d4d9de4d;
+          border: none;
+          outline: none;
+          margin-bottom: 2rem;
+        }
+
+        .contact {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          input {
+            width: 48%;
+            padding: 0 0 0 1rem;
+            /* display: inline; */
+            margin-right: 0.43rem;
+          }
+        }
+
+        p {
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 48px;
+          text-align: left;
+        }
+
+        button {
+          width: 100%;
+          height: 40px;
+          border-radius: 0.3rem;
+          background: #000000;
+          color: #ffff;
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 2rem;
+        }
+
+        .radio {
+          width: 100%;
+          height: 51px;
+          padding-inline: 30px;
+          line-height: 10px;
+          border-radius: 5px;
+          border: 1px solid #d4d9de66;
+          margin-bottom: 30px;
+          margin-right: 0;
+          display: flex;
+          /* justify-content: center; */
+          align-items: center;
+
+          span {
+            font-size: 0.65rem;
+          }
+
+          input {
+            width: 20px;
+            height: 20px;
+            margin-right: 25px;
+            /* margin-block: 50px; */
+          }
+
+          .imageWrap {
+            position: absolute;
+            left: 300px;
+            width: 60rem;
+            img {
+              width: auto;
+              height: auto;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .orderSummary {
+        /* padding: 50px; */
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        width: 100vw;
+        height: auto;
+        background-color: #ffff;
+        .order {
+          background-color: #ffff;
+          display: flex;
+          /* flex-direction: column; */
+          justify-content: center;
+          /* grid-template-columns: 1fr 1fr; */
+          gap: 0;
+        }
+
+        .image {
+          display: none;
+          h5 {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+        }
+
+        .totalSummary {
+          margin-top: 0;
+          width: 100%;
+          h2 {
+            display: none;
+          }
+          .summary {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr; */
+
+            margin-left: 100px;
+
+            img {
+              position: absolute;
+              right: 250px;
+              width: 0;
+              margin-top: 7px;
+              width: 100px;
+              /* height: 198px; */
+            }
+          }
+
+          hr {
+            width: 60%;
+            margin-right: 0;
+          }
+
+          .amount {
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+          }
+        }
+
+        h4 {
+          font-size: 0.75rem;
+          font-weight: 500;
+          line-height: 2rem;
+        }
+
+        h5 {
+          font-size: 0.75rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+        }
+
+        .discountBtn {
+          display: none;
+        }
       }
     }
   }
