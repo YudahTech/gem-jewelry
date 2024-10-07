@@ -1,0 +1,499 @@
+.imageWrapper {
+  img {
+    width: 100%;
+    /* height: 506px; */
+    background-color: #e7e7e729;
+    filter: "grayscale(100%) brightness(150%) contrast(100%)";
+    height: "auto";
+  }
+
+  .imageContent {
+    position: absolute;
+    bottom: 100px;
+    left: 500px;
+    color: #ffff;
+    text-align: right;
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      text-align: right;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      text-align: right;
+    }
+
+    button {
+      /* width: 471px; */
+      /* height: 79px; */
+      padding: 1rem 10rem 1rem 10rem;
+      background: #ffffff;
+      border-radius: 5px;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 3rem;
+      /* text-align: left; */
+    }
+  }
+}
+
+.jewellery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+  gap: 1.5rem;
+
+  span {
+    display: block;
+    font-size: 1rem;
+  }
+}
+
+.customize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f4ee;
+  height: 60vh;
+  margin-top: 55px;
+  width: 100%;
+
+  .goldNecklace {
+    img {
+      width: 387px;
+      height: 378px;
+      margin-right: 65px;
+    }
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    text-align: left;
+  }
+
+  button {
+    width: 28rem;
+    height: 4.5rem;
+    top: 309px;
+    left: 903px;
+    /* padding: 19px 42px 15px 52px; */
+    gap: 0px;
+    border-radius: 5px;
+    border: 0.5px solid #000000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-left: 25rem;
+    background-color: transparent;
+  }
+
+  .rightArrow {
+    img {
+      position: relative;
+      left: 3rem;
+      bottom: -0.5rem;
+    }
+  }
+}
+
+.bagsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 56px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+
+    h1 {
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 72px;
+      text-align: left;
+      margin: 0;
+    }
+
+    a {
+      color: red;
+    }
+  }
+  .bags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.reviewsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 55px;
+  .heading {
+    align-items: center;
+    width: 1152px;
+
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2rem;
+      text-align: center;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2rem;
+      text-align: left;
+    }
+  }
+
+  .reviews {
+    p {
+      margin: 0;
+    }
+    .topReview {
+      display: flex;
+      /* grid-template-columns: 1fr 1fr; */
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      width: 100%;
+      gap: 6rem;
+      margin-bottom: 2rem;
+    }
+    .bottomReview {
+      display: flex;
+      /* grid-template-columns: 1fr 1fr; */
+      align-items: center;
+      justify-content: space-evenly;
+      /* margin: auto; */
+      /* width: 100%; */
+      a {
+        color: red;
+      }
+    }
+    .review {
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 1rem;
+      text-align: left;
+      color: #000000b2;
+      width: 35rem;
+      height: 8rem;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .imageWrapper {
+    .imageContent {
+      position: relative;
+      bottom: 200px;
+      left: -50px;
+      color: #ffff;
+      text-align: right;
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 0;
+        text-align: right;
+        margin: 0;
+      }
+
+      h5 {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 4rem;
+        text-align: right;
+        margin: 0;
+      }
+
+      button {
+        width: 10rem;
+        height: 2.5rem;
+        padding: 0;
+        background: #ffffff;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 0;
+        margin: 0;
+        /* text-align: left; */
+      }
+    }
+  }
+
+  .jewellery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3.5rem;
+    gap: 1.5rem;
+
+    span {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+  .jewellery {
+    flex-wrap: wrap;
+    img {
+      width: 156px;
+      height: 177px;
+    }
+
+    span {
+      font-size: 0.5rem;
+    }
+  }
+
+  .customize {
+    flex-direction: column;
+    .goldNecklace {
+      img {
+        width: 324px;
+        height: 173px;
+        align-self: center;
+        /* margin-right: 65px; */
+      }
+    }
+  }
+
+  .customize {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background: #f8f4ee;
+    height: 42vh;
+    /* margin-top: 27px; */
+    width: 100%;
+
+    .goldNecklace {
+      width: 80%;
+      img {
+        width: 100%;
+        height: 10rem;
+        margin-right: 0;
+        margin-top: 27px;
+        /* margin: 0; */
+      }
+    }
+
+    .content {
+      width: 80%;
+      h5 {
+        font-size: 0.6rem;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 2rem;
+        text-align: left;
+        margin: 0;
+      }
+
+      button {
+        width: 18rem;
+        height: 2.5rem;
+        /* top: 309px; */
+        /* left: 903px; */
+        /* padding: 19px 42px 15px 52px; */
+        gap: 0px;
+        border-radius: 5px;
+        border: 0.5px solid #000000;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        margin: 0;
+        background-color: transparent;
+      }
+    }
+
+    .rightArrow {
+      img {
+        position: relative;
+        left: 30px;
+        bottom: -4px;
+      }
+    }
+  }
+
+  .bagsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 2rem;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 72%;
+
+      h1 {
+        font-family: Poppins;
+        font-size: 0.7rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        /* text-align: left; */
+        margin: 0;
+      }
+
+      a {
+        color: red;
+        font-size: 0.5rem;
+      }
+    }
+    .bags {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      img {
+        width: 155px;
+        height: 177px;
+      }
+
+      span {
+        display: block;
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  .reviewsContainer {
+    height: auto;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    margin-bottom: 4.5rem;
+    .heading {
+      align-items: center;
+      width: 80%;
+
+      h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 0;
+        text-align: center;
+      }
+
+      h5 {
+        font-size: 0.6rem;
+        font-weight: 400;
+        line-height: 10px;
+        text-align: center;
+        /* width: 20rem; */
+      }
+    }
+
+    .reviews {
+      p {
+        margin: 0;
+      }
+      .topReview {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 80vw;
+        gap: 12px;
+        margin-bottom: 0;
+        q {
+          font-size: 0.5rem;
+          line-height: 0;
+        }
+      }
+      .bottomReview {
+        display: none;
+
+        a {
+          display: inline-block;
+          color: red;
+        }
+      }
+      .review {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        color: #000000b2;
+        width: 553px;
+        height: 132px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .imageWrapper {
+    .imageContent {
+      position: relative;
+      bottom: 100px;
+      left: -30px;
+      color: #ffff;
+      text-align: right;
+      h1 {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 0;
+        text-align: right;
+        margin: 0;
+      }
+
+      h5 {
+        font-size: 0.5rem;
+        font-weight: 400;
+        line-height: 2rem;
+        text-align: right;
+        margin: 0;
+      }
+
+      button {
+        width: 10rem;
+        height: 2.5rem;
+        padding: 0;
+        background: #ffffff;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 0;
+        margin: 0;
+        /* text-align: left; */
+      }
+    }
+  }
+}
