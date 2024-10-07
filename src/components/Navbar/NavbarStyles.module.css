@@ -171,6 +171,7 @@ nav {
       }
       .hamburgerMenu {
         display: block;
+        cursor: pointer;
       }
     }
     .navLinks {
