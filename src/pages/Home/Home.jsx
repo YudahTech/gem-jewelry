@@ -22,18 +22,18 @@ import { PRODUCTSBAGS } from "../../data";
 import { formatPrice } from "../../data";
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <section id="home" className="styles.container">
       <div className={styles.imageWrapper}>
         {/* <img src={flower} alt="flower" /> */}
-        <picture>
+        {/* <picture>
           <source media="(max-width: 786px)" srcSet={smallFlower} />
-          <source media="(min-width: 787px)" srcSet={flower} />
+          <source media="(min-width: 787px)" srcSet={smallFlower} />
           <img src={smallFlower} alt="Responsive Image" />
-        </picture>
+        </picture> */}
         <div className={styles.imageContent}>
           <h1>NEW IN: ENGAGEMENT COLLECTION</h1>
           <h5>Check out our new engagement collection at 25% off</h5>
@@ -70,8 +70,8 @@ const Home = () => {
           <button>
             Customize my jewelery
             <picture className={styles.rightArrow}>
-              <source media="(max-width: 786px)" srcSet={smallRightArrow} />
-              <source media="(min-width: 787px)" srcSet={rightArrow} />
+              <source media="(max-width: 1025px)" srcSet={smallRightArrow} />
+              <source media="(min-width: 786px)" srcSet={rightArrow} />
               <img src={smallRightArrow} alt="Responsive Image" />
             </picture>
           </button>

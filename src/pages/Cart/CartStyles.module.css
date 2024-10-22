@@ -177,6 +177,549 @@ a {
   }
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .container {
+    h4 {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 3rem;
+      text-align: left;
+      cursor: pointer;
+      display: inline;
+
+      img {
+        position: relative;
+        top: 5px;
+        margin-right: 20px;
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 3.4rem;
+    }
+    padding-inline: 3rem;
+    .productDetails {
+      display: flex;
+      /* justify-content: center; */
+      align-items: start;
+      /* height: 100vh; */
+      grid-auto-flow: column;
+      gap: 72px;
+      width: 100%;
+      .cancelBtn {
+        display: none;
+      }
+      .imageWrapper {
+        margin-top: 3rem;
+        img {
+          width: 20rem;
+          height: 20rem;
+        }
+      }
+
+      .content {
+        /* padding: 85px 145px 65px 45px; */
+        width: 100%;
+
+        h3 {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 3.4rem;
+          text-align: left;
+          width: 100%;
+
+          img {
+            position: absolute;
+            /* top: 0.6rem; */
+            left: 70rem;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 3rem;
+          text-align: left;
+        }
+
+        .desc {
+          font-size: 1.25rem;
+          font-weight: 400;
+          line-height: 1.8rem;
+          text-align: left;
+        }
+
+        .color {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2rem;
+          text-align: left;
+        }
+
+        .sizeGuide {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2rem;
+          text-align: left;
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 2rem;
+          text-align: left;
+        }
+
+        .addToBag {
+          width: 6.25rem;
+          background-color: black;
+          color: #ffff;
+          font-family: Poppins;
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 2rem;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            height: 5rem;
+            font-family: Poppins;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 2rem;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+        }
+      }
+    }
+
+    .checkoutBtn {
+      width: 60%;
+      height: 5rem;
+      padding: 0;
+      border-radius: 5px;
+      background: #000000;
+      color: #ffff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 2rem;
+      margin-top: 6.5rem;
+    }
+
+    .statement {
+      display: flex;
+      flex-direction: column;
+      height: 77vh;
+      background-color: #f8f4ee;
+      padding-inline: 9rem;
+      h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        text-align: left;
+      }
+    }
+
+    .clothes {
+      margin-block: 6.25rem;
+      .shirt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        img {
+          width: 13rem;
+        }
+
+        span {
+          display: block;
+        }
+      }
+
+      h2 {
+        margin: 0;
+        /* margin-left: 220px; */
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    h4 {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 3rem;
+      text-align: left;
+      cursor: pointer;
+      display: inline;
+
+      img {
+        position: relative;
+        top: 5px;
+        margin-right: 20px;
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 3.4rem;
+    }
+    padding-inline: 3rem;
+    .productDetails {
+      display: flex;
+      /* justify-content: center; */
+      align-items: start;
+      /* height: 100vh; */
+      grid-auto-flow: column;
+      gap: 72px;
+      width: 100%;
+      .cancelBtn {
+        display: none;
+      }
+      .imageWrapper {
+        margin-top: 3rem;
+        img {
+          width: 20rem;
+          height: 20rem;
+        }
+      }
+
+      .content {
+        /* padding: 85px 145px 65px 45px; */
+        width: 100%;
+
+        h3 {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 3.4rem;
+          text-align: left;
+          width: 100%;
+
+          img {
+            position: absolute;
+            /* top: 0.6rem; */
+            left: 60rem;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 3rem;
+          text-align: left;
+        }
+
+        .desc {
+          font-size: 1.25rem;
+          font-weight: 400;
+          line-height: 1.8rem;
+          text-align: left;
+        }
+
+        .color {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2rem;
+          text-align: left;
+        }
+
+        .sizeGuide {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2rem;
+          text-align: left;
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 2rem;
+          text-align: left;
+        }
+
+        .addToBag {
+          width: 6.25rem;
+          background-color: black;
+          color: #ffff;
+          font-family: Poppins;
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 2rem;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            height: 5rem;
+            font-family: Poppins;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 2rem;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+        }
+      }
+    }
+
+    .checkoutBtn {
+      width: 60%;
+      height: 5rem;
+      padding: 0;
+      border-radius: 5px;
+      background: #000000;
+      color: #ffff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 2rem;
+      margin-top: 6.5rem;
+    }
+
+    .statement {
+      display: flex;
+      flex-direction: column;
+      height: 77vh;
+      background-color: #f8f4ee;
+      padding-inline: 9rem;
+      h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        text-align: left;
+      }
+    }
+
+    .clothes {
+      margin-block: 6.25rem;
+      .shirt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        img {
+          width: 12rem;
+        }
+
+        span {
+          display: block;
+        }
+      }
+
+      h2 {
+        margin: 0;
+        margin-left: 13rem;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 787px) and (max-width: 1024px) {
+  .container {
+    h4 {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 3rem;
+      text-align: left;
+      cursor: pointer;
+      display: inline;
+
+      img {
+        position: relative;
+        top: 5px;
+        margin-right: 20px;
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 3.4rem;
+    }
+    padding-inline: 3rem;
+    .productDetails {
+      display: flex;
+      /* justify-content: center; */
+      align-items: start;
+      /* height: 100vh; */
+      grid-auto-flow: column;
+      gap: 40px;
+      width: 100%;
+      .cancelBtn {
+        display: none;
+      }
+      .imageWrapper {
+        margin-top: 3rem;
+        img {
+          width: 15rem;
+          height: 15rem;
+        }
+      }
+
+      .content {
+        /* padding: 85px 145px 65px 45px; */
+        width: 100%;
+
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 3.4rem;
+          text-align: left;
+          width: 100%;
+
+          img {
+            position: absolute;
+            /* top: 0.6rem; */
+            left: 44rem;
+          }
+        }
+
+        p {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 3rem;
+          text-align: left;
+        }
+
+        .desc {
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.8rem;
+          text-align: left;
+        }
+
+        .color {
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 2rem;
+          text-align: left;
+        }
+
+        .sizeGuide {
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 2rem;
+          text-align: left;
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 2rem;
+          text-align: left;
+        }
+
+        .addToBag {
+          width: 6.25rem;
+          background-color: black;
+          color: #ffff;
+          font-family: Poppins;
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 2rem;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            height: 5rem;
+            font-family: Poppins;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 2rem;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+        }
+      }
+    }
+
+    .checkoutBtn {
+      width: 60%;
+      height: 5rem;
+      padding: 0;
+      border-radius: 5px;
+      background: #000000;
+      color: #ffff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 2rem;
+      margin-top: 6.5rem;
+    }
+
+    .statement {
+      display: flex;
+      flex-direction: column;
+      height: 77vh;
+      background-color: #f8f4ee;
+      padding-inline: 9rem;
+      h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        text-align: left;
+      }
+    }
+
+    .clothes {
+      margin-block: 6.25rem;
+      .shirt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        img {
+          width: 10rem;
+        }
+
+        span {
+          display: block;
+        }
+      }
+
+      h2 {
+        margin: 0;
+        margin-left: 13rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+      }
+    }
+  }
+}
 @media (max-width: 786px) {
   .container {
     padding-inline: 1rem;

@@ -48,9 +48,9 @@ const Payment = () => {
   const totalAmount = getTotalCartAmount();
   const delivery = 5000;
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const validate = () => {
     let errors = {};
@@ -109,14 +109,14 @@ const Payment = () => {
       <div className={styles.icons}>
         {/* <img src={one} alt="" /> */}
         <picture className={styles.logo}>
-          <source media="(max-width: 786px)" srcSet={smallOne} />
-          <source media="(min-width: 787px)" srcSet={one} />
+          <source media="(max-width: 1024px)" srcSet={smallOne} />
+          <source media="(min-width: 1025px)" srcSet={one} />
           <img src={one} alt="Responsive Image" />
         </picture>
         {/* <img src={two} alt="" /> */}
         <picture className={styles.logo}>
-          <source media="(max-width: 786px)" srcSet={smallTwo} />
-          <source media="(min-width: 787px)" srcSet={two} />
+          <source media="(max-width: 1024px)" srcSet={smallTwo} />
+          <source media="(min-width: 1025px)" srcSet={two} />
           <img src={two} alt="Responsive Image" />
         </picture>
       </div>
@@ -137,14 +137,14 @@ const Payment = () => {
             <div className={styles.imageWrap}>
               {/* <img src={visa} alt="" /> */}
               <picture className={styles.logo}>
-                <source media="(max-width: 786px)" srcSet={smallVisa} />
-                <source media="(min-width: 787px)" srcSet={visa} />
+                <source media="(max-width: 1024px)" srcSet={smallVisa} />
+                <source media="(min-width: 1025px)" srcSet={visa} />
                 <img src={visa} alt="Responsive Image" />
               </picture>
               {/* <img src={masterCard} alt="" /> */}
               <picture className={styles.logo}>
-                <source media="(max-width: 786px)" srcSet={smallMasterCard} />
-                <source media="(min-width: 787px)" srcSet={masterCard} />
+                <source media="(max-width: 1024px)" srcSet={smallMasterCard} />
+                <source media="(min-width: 1025px)" srcSet={masterCard} />
                 <img src={masterCard} alt="Responsive Image" />
               </picture>
             </div>

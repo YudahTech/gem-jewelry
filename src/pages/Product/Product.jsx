@@ -89,8 +89,8 @@ const product = () => {
         <span>
           Shipping Details
           <picture className={styles.rightArrow}>
-            <source media="(max-width: 786px)" srcSet={smallRightArrow} />
-            <source media="(min-width: 787px)" srcSet={rightArrow} />
+            <source media="(max-width: 1024px)" srcSet={smallRightArrow} />
+            <source media="(min-width: 1025px)" srcSet={rightArrow} />
             <img src={smallRightArrow} alt="Responsive Image" />
           </picture>
         </span>
@@ -99,8 +99,8 @@ const product = () => {
         <span>
           Return Policy
           <picture className={styles.rightArrow}>
-            <source media="(max-width: 786px)" srcSet={smallRightArrow} />
-            <source media="(min-width: 787px)" srcSet={rightArrow} />
+            <source media="(max-width: 1024px)" srcSet={smallRightArrow} />
+            <source media="(min-width: 1025px)" srcSet={rightArrow} />
             <img src={smallRightArrow} alt="Responsive Image" />
           </picture>
         </span>
@@ -108,8 +108,8 @@ const product = () => {
         <span>
           Customer Reviews
           <picture className={styles.rightArrow}>
-            <source media="(max-width: 786px)" srcSet={smallRightArrow} />
-            <source media="(min-width: 787px)" srcSet={rightArrow} />
+            <source media="(max-width: 1024px)" srcSet={smallRightArrow} />
+            <source media="(min-width: 1025px)" srcSet={rightArrow} />
             <img src={smallRightArrow} alt="Responsive Image" />
           </picture>
         </span>

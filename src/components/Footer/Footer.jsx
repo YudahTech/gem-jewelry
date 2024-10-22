@@ -15,8 +15,8 @@ const Footer = () => {
       <div className={styles.logo}>
         {/* <img src={footerLogo} alt="logo" /> */}
         <picture className={styles.logo}>
-          <source media="(max-width: 786px)" srcSet={smallFooterLogo} />
-          <source media="(min-width: 787px)" srcSet={footerLogo} />
+          <source media="(max-width: 1024px)" srcSet={smallFooterLogo} />
+          <source media="(min-width: 1025px)" srcSet={footerLogo} />
           <img src={footerLogo} alt="Responsive Image" />
         </picture>
       </div>
@@ -36,8 +36,8 @@ const Footer = () => {
           {/* <div className={styles.rightArrow}> */}
           {/* <img src={rightArrow} alt="right arrow" /> */}
           <picture className={styles.rightArrow}>
-            <source media="(max-width: 786px)" srcSet={smallRightArrow} />
-            <source media="(min-width: 787px)" srcSet={rightArrow} />
+            <source media="(max-width: 1025px)" srcSet={smallRightArrow} />
+            <source media="(min-width: 1024px)" srcSet={rightArrow} />
             <img src={smallRightArrow} alt="Responsive Image" />
           </picture>
           {/* </div> */}

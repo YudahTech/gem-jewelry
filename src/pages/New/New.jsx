@@ -6,7 +6,7 @@ import filterIcon from "../../assets/filter icon.png";
 import { PRODUCTSJEWELLERY } from "../../data";
 import { formatPrice } from "../../data";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 // import one from "../../assets/Frame 19 (2).png";
 // import two from "../../assets/Frame 10950.png";
 // import three from "../../assets/Frame 10951.png";
@@ -25,16 +25,22 @@ import { useEffect } from "react";
 // import ProductCard from "../../components/ProductCard";
 
 const New = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
+  const [activePage, setActivePage] = useState(1); // Add this state to track the active page
+  const handlePageClick = (page) => {
+    setActivePage(page); // Update the active page when clicked
+  };
+  const pages = [1, 2, 3, 4, 5, 6];
   return (
     <section id="new" className={styles.new}>
       <Link to="/">
         <div className={styles.backBtn}>
           <picture>
-            <source media="(max-width: 786px)" srcSet={smallLeftArrow} />
-            <source media="(min-width: 787px)" srcSet={leftArrow} />
+            <source media="(max-width: 1024px)" srcSet={smallLeftArrow} />
+            <source media="(min-width: 1025px)" srcSet={leftArrow} />
             <img src={smallLeftArrow} alt="Responsive Image" />
           </picture>
           {/* <img src={leftArrow} alt="left arrow" /> */}
@@ -96,7 +102,7 @@ const New = () => {
                 <Link to={`/product/${product.id}`}>
                   <img src={product.productImage} alt="ring" />
                 </Link>
-                <div>
+                <div className={styles.desc}>
                   <span>{product.productName}</span>
                   <span>{`₦${formatPrice(product.price)}`}</span>
                   <span>{product.color}</span>
@@ -108,14 +114,25 @@ const New = () => {
       </div>
 
       <div className={styles.pages}>
-        <span>1</span>
+        {/* <span>1</span>
         <span>2</span>
         <span>3</span>
         <span>5</span>
         <span>...</span>
         <span>8</span>
         <span>9</span>
-        <span></span>
+        <span></span> */}
+
+        {pages.map((page) => (
+          <span
+            key={page}
+            className={activePage === page ? styles.activePage : ""}
+            onClick={() => handlePageClick(page)}
+          >
+            {page}
+          </span>
+        ))}
+        <span>...</span>
       </div>
       <div className={styles.highlight}></div>
       <hr />

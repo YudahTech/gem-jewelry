@@ -55,15 +55,15 @@ const Payment = () => {
             </span>
           </div>
         </div>
-        <div className={styles.orderSummary}>
-          <div className={styles.order}>
-            {/* <div className={styles.image}> */}
-            {/* <h5>Order Summary</h5> */}
-            {/* <div className={styles.imageWrapper}> */}
-            {/* <img src={ring} alt="ring" /> */}
-            {/* </div> */}
-            {/* </div> */}
-            <div className={styles.totalSummary}>
+        {/* <div className={styles.orderSummary}>
+          <div className={styles.order}> */}
+        {/* <div className={styles.image}> */}
+        {/* <h5>Order Summary</h5> */}
+        {/* <div className={styles.imageWrapper}> */}
+        {/* <img src={ring} alt="ring" /> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* <div className={styles.totalSummary}>
               <h2>Order Summary</h2>
               <div className={styles.summary}>
                 {allProducts.map((product) => {
@@ -98,7 +98,7 @@ const Payment = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
       <Link to="/">
         <div className={styles.backToHome}>

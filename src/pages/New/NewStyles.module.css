@@ -86,23 +86,369 @@
   }
   .pages {
     text-align: center;
+    margin-top: 20px;
     span {
       margin-inline: 4rem;
       font-size: 1.25rem;
       font-weight: 400;
       line-height: 1.8rem;
       text-align: left;
+      cursor: pointer; /* Add pointer to show the number is clickable */
+      position: relative; /* Required for the underline effect */
+    }
+
+    .activePage {
+      font-weight: 700; /* Make the active page number bold */
+      color: #000; /* Optional: Make it black */
+    }
+
+    /* Add the black underline to the active page number */
+    .activePage::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4.6rem; /* Adjust the width of the underline */
+      height: 0.3rem;
+      background-color: #000;
+      border-radius: 2px;
     }
   }
 
-  .highlight {
+  .pages span:hover {
+    color: #000; /* Optional: Change color on hover */
+    font-weight: 700;
+  }
+
+  /* .highlight {
     width: 4.6rem;
     height: 0.3rem;
     border: 3px solid #000000;
     margin-left: 13.6rem;
-  }
+  } */
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .new {
+    padding: 0 70px 0 35px;
+    .backBtn {
+      cursor: pointer;
+      margin-left: 8rem;
+      display: inline;
+      span {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-align: left;
+      }
+
+      img {
+        position: relative;
+        top: 0.6rem;
+        margin-right: 2rem;
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      text-align: right;
+    }
+
+    h3 {
+      display: none;
+    }
+
+    hr {
+      width: 80%;
+      height: 0;
+      border: 1px solid #708090b2;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 19rem 1fr;
+      gap: 1.25rem;
+    }
+
+    .shop {
+      display: grid;
+      grid-template-columns: 15rem 15rem 15rem;
+      gap: 1rem;
+      margin-block: 3.4rem;
+
+      img {
+        width: 14rem;
+      }
+      .desc {
+        width: 100%;
+        span {
+          display: block;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .filter {
+      width: 350px;
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 3rem;
+        text-align: left;
+      }
+      hr {
+        margin-left: 0;
+      }
+      h4 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        text-align: left;
+      }
+      span {
+        display: flex;
+        width: 40%;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        text-align: left;
+
+        input {
+          position: absolute;
+          left: 15rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          border: 1px solid #000000;
+        }
+      }
+    }
+    .pages {
+      text-align: center;
+      span {
+        margin-inline: 3rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        text-align: left;
+      }
+    }
+
+    /* .highlight {
+      width: 4.6rem;
+      height: 0.3rem;
+      border: 3px solid #000000;
+      margin-left: 8rem;
+    } */
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .new {
+    padding: 0 70px 0 35px;
+    .backBtn {
+      cursor: pointer;
+      margin-left: 8rem;
+      display: inline;
+      span {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-align: left;
+      }
+
+      img {
+        position: relative;
+        top: 0.6rem;
+        margin-right: 2rem;
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      text-align: right;
+    }
+
+    h3 {
+      display: none;
+    }
+
+    hr {
+      width: 80%;
+      height: 0;
+      border: 1px solid #708090b2;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 19rem 1fr;
+      gap: 1.25rem;
+    }
+
+    .shop {
+      display: grid;
+      grid-template-columns: 12rem 12rem 12rem;
+      gap: 1rem;
+      margin-block: 3.4rem;
+
+      img {
+        width: 12rem;
+      }
+      .desc {
+        width: 100%;
+        span {
+          display: block;
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .filter {
+      width: 350px;
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 3rem;
+        text-align: left;
+      }
+      hr {
+        margin-left: 0;
+      }
+      h4 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        text-align: left;
+      }
+      span {
+        display: flex;
+        width: 40%;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        text-align: left;
+
+        input {
+          position: absolute;
+          left: 15rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          border: 1px solid #000000;
+        }
+      }
+    }
+    .pages {
+      text-align: center;
+      span {
+        margin-inline: 2rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        text-align: left;
+      }
+    }
+
+    /* .highlight {
+      width: 4.6rem;
+      height: 0.3rem;
+      border: 3px solid #000000;
+      margin-left: 20%;
+    } */
+    hr {
+      width: 80%;
+    }
+  }
+}
+@media only screen and (min-width: 787px) and (max-width: 1024px) {
+  .new {
+    padding: 0 15px 0 0;
+    .backBtn {
+      margin-left: 2rem;
+      span {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 0;
+        text-align: left;
+      }
+
+      img {
+        position: relative;
+        top: 0.4rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+
+    h3 {
+      display: block;
+      text-align: right;
+      img {
+        position: relative;
+        bottom: -0.5rem;
+      }
+    }
+
+    hr {
+      display: none;
+    }
+
+    .container {
+      display: flex;
+      /* grid-template-columns: 31rem 1fr; */
+      /* gap: 1.25rem; */
+      justify-content: center;
+      align-items: center;
+      .filter {
+        display: none;
+      }
+
+      .shop {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-wrap: wrap;
+        /* grid-template-columns: 16rem 16rem 16rem; */
+        gap: 1.25rem;
+        margin-block: 0;
+        img {
+          width: 155px;
+          height: 177px;
+        }
+        span {
+          display: block;
+          font-size: 0.6rem;
+        }
+      }
+    }
+    .pages {
+      text-align: center;
+      margin-top: 1rem;
+      span {
+        margin-inline: 1rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        text-align: left;
+      }
+    }
+
+    /* .highlight {
+      width: 3rem;
+      height: 0.3rem;
+      border: 3px solid #000000;
+      margin-left: 11rem;
+    } */
+  }
+}
 @media (max-width: 786px) {
   .new {
     padding: 0 15px 0 0;
@@ -182,12 +528,12 @@
       }
     }
 
-    .highlight {
+    /* .highlight {
       width: 3rem;
       height: 0.3rem;
       border: 3px solid #000000;
       margin-left: 11rem;
-    }
+    } */
   }
 }
 
