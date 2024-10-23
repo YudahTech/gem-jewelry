@@ -48,9 +48,9 @@ const Payment = () => {
   const totalAmount = getTotalCartAmount();
   const delivery = 5000;
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const validate = () => {
     let errors = {};

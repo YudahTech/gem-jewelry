@@ -97,9 +97,9 @@ const Shipping = () => {
     }
   };
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className={styles.shipping}>
       <Link to="/new">

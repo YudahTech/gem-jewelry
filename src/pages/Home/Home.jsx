@@ -22,9 +22,9 @@ import { PRODUCTSBAGS } from "../../data";
 import { formatPrice } from "../../data";
 
 const Home = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section id="home" className="styles.container">
       <div className={styles.imageWrapper}>

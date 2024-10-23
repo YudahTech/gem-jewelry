@@ -613,10 +613,10 @@
       align-items: center;
       justify-content: center;
 
-      gap: 12px;
+      gap: 24px;
 
       img {
-        width: 12rem;
+        width: 13rem;
       }
 
       span {

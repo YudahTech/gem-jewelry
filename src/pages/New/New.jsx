@@ -25,9 +25,9 @@ import { useEffect, useState } from "react";
 // import ProductCard from "../../components/ProductCard";
 
 const New = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [activePage, setActivePage] = useState(1); // Add this state to track the active page
   const handlePageClick = (page) => {
